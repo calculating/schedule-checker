@@ -28,7 +28,8 @@ function crack() {
     classes = ""
 
     classArr.forEach(e => classes += e);
-    document.getElementById("ytv").remove()
+    document.getElementsByClassName("slideContainer")[0].remove()
     document.getElementsByClassName("watermark")[0].innerHTML = "schedulecheck.org"
     document.getElementById("result").innerHTML = classes
 }
+
