@@ -100,13 +100,30 @@
             min-height: 100vh;
             font-size: 1.5rem;
         }
+        .watermark {
+            writing-mode: vertical-rl;
+            margin: auto;
+            padding-right: 2em;
+        }
+        .container {
+            display: flex;
+            padding: 2em;
+            max-width: 60%;
+            display: flex;
+        }
+
     </style>
 </head>
 <body>
     <script src="index.js"></script>
     <h1 style="text-align: center;"><strong>High School Schedule Checker</strong></h1>
-    <a id="info" style="text-align: center;" href="https://www.youtube.com/watch?v=xekqFIDKsjg"><em>Video tutorial</em></a>
-    <p id="result">&nbsp;</p>
+    <!--<a id="info" style="text-align: center;" href="https://www.youtube.com/watch?v=xekqFIDKsjg"><em>Video tutorial</em></a>-->
+    <iframe id="ytv" width="560" height="315" src="https://www.youtube.com/embed/xekqFIDKsjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="container">
+        <h6 class='watermark'></h6>
+        <p id="result">&nbsp;</p>
+    </div>
+    
     <div id="inputArea" style="text-align: center;">
         <input type="input" class="form__field" placeholder="Paste the network activity packet here..." name="fpacket" id='packet' required />
         <label for="packet" class="form__label"></label>
