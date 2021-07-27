@@ -20,7 +20,7 @@ function crack() {
         }
         short += " period"
 
-        teach = medium.slice(medium.lastIndexOf(")")+2)
+        teach = medium.slice(medium.lastIndexOf(")")+3)
 
         classArr[parseInt(short[short.length - 10])] = short + teach + "<br>"
     }
